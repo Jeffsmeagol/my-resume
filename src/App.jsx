@@ -10,12 +10,12 @@ import { Box, Divider, Stack, Typography } from "@mui/material";
 
 export default function App() {
   return (
-    <Stack py={6}>
+    <Stack py={4}>
       <Stack textAlign="center" alignItems="center" pb={2}>
         <Typography
           bgcolor="white"
           width="70%"
-          fontSize="4rem"
+          fontSize="3rem"
           border="2px solid blue"
           mb={-4}
           zIndex={2}
@@ -26,7 +26,7 @@ export default function App() {
           bgcolor="rgba(170, 170, 170, 0.5)"
           width="100%"
           fontSize="2rem"
-          py={6}
+          py={4}
         >
           Web Engineer
         </Typography>
@@ -125,69 +125,109 @@ export default function App() {
             CAREER OBJECTIVE
           </Typography>
           <Typography>
-            I'm an enthusiastic computer programmer that specializes in web
-            development, I have the ability to learn and collaborate in rapidly
-            changing environments and compositions. Eager to tackle web
-            development/design challenges to achieve lasting impact on user
-            experience.
+            I'm an enthusiastic Software Engineer that specializes in the Web, I
+            have been oppurtuned to work in multiple facelets of the web space
+            from development(coding), testing to deployment and automation in
+            over 3 years. I have picked-up the use of many tools and abilities
+            to learn and collaborate in these rapidly changing environments and
+            compositions. Eager to apply my skills to tackle web
+            development/design/maintenance challenges to achieve more performant
+            and lasting impact on user experience.
           </Typography>
 
-          <Typography fontSize="1.5rem" fontWeight={500} pt={6} pb={1}>
+          <Typography fontSize="1.5rem" fontWeight={500} pt={2} pb={1}>
             WORK EXPERIENCE
           </Typography>
+
           <Typography fontSize="1.2rem" pb={1}>
+            Web Developer/SRE Engineer
+          </Typography>
+          <Typography>Interswitch Group</Typography>
+          <Typography py={2}>2023 - / Lagos, Nigeria</Typography>
+          <Stack direction="row" pb={0.5}>
+            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+            <Typography color="text.secondary">
+              Ensured the reliability and performance of ISW infrastructure and
+              related systems. Developed and maintained monitoring and alerting
+              systems. Participated in on-call rotations to address site
+              reliability issues.
+            </Typography>
+          </Stack>
+          <Stack direction="row" pb={0.5}>
+            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+            <Typography color="text.secondary">
+              Partnered with senior-level engineers to identify and resolve
+              complex performance issues resulting in 99.98% uptime compared to
+              the 99.96% recorded for the last FY for the kimono's services
+            </Typography>
+          </Stack>
+          <Stack direction="row" pb={0.5}>
+            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+            <Typography color="text.secondary">
+              Participated in on-call rotations to address site reliability
+              issues.
+            </Typography>
+          </Stack>
+          <Stack direction="row" pb={0.5}>
+            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+            <Typography color="text.secondary">
+              Collaborated with designers and stakeholders to create a
+              user-friendly interface for a new web application, resulting in a
+              25% increase in user engagement and a 20% decrease in bounce rate.
+            </Typography>
+          </Stack>
+          <Stack direction="row" pb={0.5}>
+            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+            <Typography color="text.secondary">
+              Participated as the lead Front-end Engineer in a team of 12
+              consisting of fellow Front-end, Back-end, QA, DevOps and Product
+              manager in the development of a Travel agency/Social media
+              platform that provides users with the ability to find and link
+              with travel-partners in Java, Python and JavaScript.
+            </Typography>
+          </Stack>
+
+          <Typography fontSize="1.2rem" py={1}>
             Web Developer
           </Typography>
           <Typography>FireSwitch Technologies Ltd</Typography>
-          <Typography py={4}>2021 - 2022 / Ibadan, Nigeria</Typography>
+          <Typography py={2}>2021 - 2022 / Ibadan, Nigeria</Typography>
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Translated designs and wireframes into high-quality code using
-              Reactjs with HTML and CSS.
+              Translated UI/UX designs and wireframes into high-quality code using
+              tools like Reactjs Material UI with HTML and CSS.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Work with back-end developers to integrate UI components with APIs
-              and databases.
+              Optimized web applications for maximum speed and scalability,
+              resulting in a 40% decrease in page load time and a 20% increase
+              in overall site traffic.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Collaborated with designers and performance team on designing
-              updates to sites and blogs, improving user experience.
+              Developed and maintained RESTful APIs, enabling seamless
+              communication between web applications and third-party services,
+              resulting in a 30% increase in efficiency.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Write high-quality, scalable, and reusable code.
+              Debugged and troubleshooted web applications, identifying and
+              addressing performance bottlenecks, resulting in a 20% reduction
+              in bug-related delays and a 15% increase in overall code quality.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Participated in stand-ups 2 times a month. Team member would
+              Participated in stand-ups 2 times a month. Team members would
               review, assign, and teach each other.
-            </Typography>
-          </Stack>
-
-          <Typography fontSize="1.5rem" fontWeight={500} pt={6} pb={1}>
-            PROJECTS
-          </Typography>
-          <Typography fontSize="1.2rem" pb={1}>
-            A Travel Agency Website
-          </Typography>
-          <Typography py={4}>Developer</Typography>
-
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Translated designs and wireframes into high-quality code using
-              Reactjs, MUI5, with HTML and CSS.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
@@ -195,12 +235,6 @@ export default function App() {
             <Typography color="text.secondary">
               Built responsive, accessible, and dynamic web pages to enable all
               users to navigate site.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Implemented the React-Router DOM for the CSR.
             </Typography>
           </Stack>
         </Box>
