@@ -197,7 +197,7 @@ export default function App() {
             <Typography color="text.secondary">
               Developed and maintained monitoring, alerting systems and
               participated in on-call rotations to address site reliability
-              issues which result in the increase of about 10% MTTR.
+              issues leading the MTTR to increase in about 10%.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
@@ -226,7 +226,7 @@ export default function App() {
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Participated as the lead Front-end Engineer in a team of 12
+              Performed as the lead Front-end Engineer in a team of 12
               consisting of fellow Front-end, Back-end, QA, DevOps and Product
               manager in the development of a Travel agency/Social media
               platform that provides users with the ability to find and link
@@ -273,8 +273,8 @@ export default function App() {
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Participated in stand-ups 2 times a month. Team members would
-              review, assign, and teach each other.
+              Attended stand-ups 2 times a month. Team members would review,
+              assign, and teach each other.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
