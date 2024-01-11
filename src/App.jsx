@@ -26,7 +26,8 @@ export default function App() {
           bgcolor="rgba(170, 170, 170, 0.5)"
           width="100%"
           fontSize="2rem"
-          py={4}
+          pt={4}
+          pb={1}
         >
           Web Engineer
         </Typography>
@@ -195,8 +196,8 @@ export default function App() {
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Translated UI/UX designs and wireframes into high-quality code using
-              tools like Reactjs Material UI with HTML and CSS.
+              Translated UI/UX designs and wireframes into high-quality code
+              using tools like Reactjs Material UI with HTML and CSS.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
