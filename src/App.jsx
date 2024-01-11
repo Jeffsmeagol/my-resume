@@ -33,11 +33,16 @@ export default function App() {
         </Typography>
       </Stack>
       <Stack direction="row">
-        <Box width="35%" textAlign="right" borderRight="2px solid blue" px={4}>
-          <Typography fontSize="1.5rem" fontWeight={500} pb={1}>
+        <Box width="35%" borderRight="2px solid blue" px={4}>
+          <Typography
+            fontSize="1.5rem"
+            textAlign="right"
+            fontWeight={500}
+            pb={1}
+          >
             CONTACT
           </Typography>
-          <Box color="text.secondary">
+          <Box textAlign="right" color="text.secondary">
             <Stack direction="row" justifyContent="flex-end" pb={1}>
               <Typography>adebowalejeﬀ@yahoo.com</Typography>
               <Email color="disabled" sx={{ ml: 2 }} />
@@ -86,34 +91,69 @@ export default function App() {
             </a>
           </Box>
 
-          <Typography fontSize="1.5rem" fontWeight={500} pt={6} pb={1}>
+          <Typography
+            fontSize="1.5rem"
+            textAlign="right"
+            fontWeight={500}
+            pt={6}
+            pb={1}
+          >
             SKILLS
           </Typography>
-          <Box color="text.secondary">
-            <Typography>JavaScript/Nodejs</Typography>
-            <Typography>Redux-Toolkit</Typography>
-            <Typography>React</Typography>
-            <Typography>HTML/CSS</Typography>
-            <Typography>Material UI</Typography>
-            <Typography>React-Hook-Form</Typography>
-            <Typography>Python</Typography>
-            <Typography>Java/Springboot</Typography>
-          </Box>
+          <Stack direction="row" justifyContent="space-between" pl={10}>
+            <Box textAlign="left" color="text.secondary">
+              <Typography>JavaScript</Typography>
+              <Typography>TypeScript</Typography>
+              <Typography>Nextjs</Typography>
+              <Typography>Reactjs</Typography>
+              <Typography>Redux-Toolkit</Typography>
+              <Typography>HTML/CSS</Typography>
+              <Typography>Material UI</Typography>
+              <Typography>Python</Typography>
+              <Typography>Webpack</Typography>
+            </Box>
+            <Box textAlign="right" color="text.secondary">
+              <Typography>Nodejs</Typography>
+              <Typography>Expressjs</Typography>
+              <Typography>MongoDB</Typography>
+              <Typography>Docker</Typography>
+              <Typography>Kubernetes</Typography>
+              <Typography>Jenkins</Typography>
+              <Typography>AWS services</Typography>
+              <Typography>Networking</Typography>
+              <Typography>RESTful APIs</Typography>
+            </Box>
+          </Stack>
 
-          <Typography fontSize="1.5rem" fontWeight={500} pt={6} pb={1}>
+          <Typography
+            fontSize="1.5rem"
+            textAlign="right"
+            fontWeight={500}
+            pt={6}
+            pb={1}
+          >
             OTHERS
           </Typography>
-          <Box color="text.secondary">
+          <Box textAlign="right" color="text.secondary">
             <Typography>Git/Github</Typography>
             <Typography>CLI/Bash</Typography>
             <Typography>Agile Methodologies</Typography>
             <Typography>Testing(Unit & Integration)</Typography>
+            <Typography>Automation</Typography>
+            <Typography>Troubleshooting</Typography>
+            <Typography>Presentation</Typography>
           </Box>
 
-          <Typography fontSize="1.5rem" fontWeight={500} pt={6} pb={1}>
+          <Typography
+            fontSize="1.5rem"
+            textAlign="right"
+            fontWeight={500}
+            pt={6}
+            pb={1}
+          >
             EDUCATION
           </Typography>
-          <Box color="text.secondary">
+          <Box color="text.secondary" textAlign="right">
             <Typography>
               Mechanical Engineering <br /> Obafemi Awolowo University <br />{" "}
               Osun, Nigeria
@@ -123,14 +163,14 @@ export default function App() {
 
         <Box width="60%" px={4}>
           <Typography fontSize="1.5rem" fontWeight={500} pb={1}>
-            CAREER OBJECTIVE
+            SUMMARY
           </Typography>
           <Typography>
-            I'm an enthusiastic Software Engineer that specializes in the Web, I
-            have been oppurtuned to work in multiple facelets of the web space
-            from development(coding), testing to deployment and automation in
-            over 3 years. I have picked-up the use of many tools and abilities
-            to learn and collaborate in these rapidly changing environments and
+            I'm a Software Engineer that specializes in the Web, I have been
+            oppurtuned to work in multiple facelets of the web space from
+            development(coding), testing to deployment and automation in over 3
+            years. I have picked-up the use of many tools and abilities to learn
+            and collaborate in these rapidly changing environments and
             compositions. Eager to apply my skills to tackle web
             development/design/maintenance challenges to achieve more performant
             and lasting impact on user experience.
@@ -149,9 +189,15 @@ export default function App() {
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
               Ensured the reliability and performance of ISW infrastructure and
-              related systems. Developed and maintained monitoring and alerting
-              systems. Participated in on-call rotations to address site
-              reliability issues.
+              related systems.
+            </Typography>
+          </Stack>
+          <Stack direction="row" pb={0.5}>
+            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+            <Typography color="text.secondary">
+              Developed and maintained monitoring, alerting systems and
+              participated in on-call rotations to address site reliability
+              issues which result in the increase of about 10% MTTR.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
@@ -159,7 +205,7 @@ export default function App() {
             <Typography color="text.secondary">
               Partnered with senior-level engineers to identify and resolve
               complex performance issues resulting in 99.98% uptime compared to
-              the 99.96% recorded for the last FY for the kimono's services
+              the 99.92% recorded for the last FY for the kimono's services
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
@@ -234,8 +280,8 @@ export default function App() {
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
-              Built responsive, accessible, and dynamic web pages to enable all
-              users to navigate site.
+              Built responsive, accessible, and highly-performant web pages to
+              enable all users to navigate site.
             </Typography>
           </Stack>
         </Box>
