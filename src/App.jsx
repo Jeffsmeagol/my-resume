@@ -167,7 +167,7 @@ export default function App() {
           </Typography>
           <Typography>
             I'm a Software Engineer that specializes in the Web, I have been
-            oppurtuned to work in multiple facelets of the web space from
+            oppurtune to work in multiple areas of the web space from
             development(coding), testing to deployment and automation in over 3
             years. I have picked-up the use of many tools and abilities to learn
             and collaborate in these rapidly changing environments and
@@ -197,15 +197,15 @@ export default function App() {
             <Typography color="text.secondary">
               Developed and maintained monitoring, alerting systems and
               participated in on-call rotations to address site reliability
-              issues leading the MTTR to increase in about 10%.
+              issues leading the MTTR to reduce by about 10%.
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
             <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
             <Typography color="text.secondary">
               Partnered with senior-level engineers to identify and resolve
-              complex performance issues resulting in 99.98% uptime compared to
-              the 99.92% recorded for the last FY for the kimono's services
+              complex performance issues resulting in 99.80% uptime compared to
+              the 99.50% recorded for the last FY for the kimono's services
             </Typography>
           </Stack>
           <Stack direction="row" pb={0.5}>
