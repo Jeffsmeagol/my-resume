@@ -6,286 +6,236 @@ import {
   PermPhoneMsg,
   RadioButtonChecked,
 } from "@mui/icons-material";
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+
+const skills = [
+  "JavaScript",
+  "Nextjs",
+  "Reactjs",
+  "React-native",
+  "TailwindCSS",
+  "Material UI",
+  "Shadcn",
+  "Tanstack Query",
+  "GraphQL",
+  "RESTful APIs",
+  "HTML",
+  "CSS",
+  "TypeScript",
+  "Nodejs",
+  "Expressjs",
+  "Nestjs",
+  "Prisma",
+  "MongoDB",
+  "SQL",
+  "AWS services",
+  "Docker",
+  "Kubernetes",
+  "Git",
+  "Bash",
+];
+
+const expFS = [
+  "Translated UI/UX designs and wireframes into high-quality code using tools like Reactjs, Material UI with HTML and CSS.",
+  "Optimized web applications for maximum speed and scalability, resulting in a 40% decrease in page load time and a 20% increase in overall site traffic.",
+  "Developed and maintained RESTful APIs, enabling seamless communication between web applications and third-party services, resulting in a 30% increase in efficiency.",
+  "Debugged and troubleshooted web applications, identifying and addressing performance bottlenecks, resulting in a 20% reduction in bug-related delays and a 15% increase in overall code quality.",
+  "Built responsive, accessible, and highly-performant web pages to enable all users to navigate site.",
+];
+
+const expIS = [
+  "Ensured the reliability and performance of ISW infrastructure and related systems.",
+  "Developed and maintained monitoring, alerting systems and participated in on-call rotations to address site reliability issues leading the MTTR to reduce by about 10%.",
+  "Partnered with senior-level engineers to identify and resolve complex performance issues resulting in 99.80% uptime compared to the 99.50% recorded for the last FY for the kimono's services",
+  "Participated in on-call rotations to address site reliability issues.",
+  "Collaborated with designers and stakeholders to create a user-friendly interface for a new web application, resulting in a 25% increase in user engagement and a 20% decrease in bounce rate.",
+];
+
+const expTV = [
+  "Collaborated with the product and design team to conceptualize system architecture",
+  "Contributed to the entire development lifecycle, from requirement analysis and planning to design, development, testing, and deployment.",
+  "Setup CI/CD pipelines for client, admin, and backend applications",
+  "Implemented multi-country payment service by integrating multiple third-party payment providers",
+  "Implemented product delivery services for various inventories across the world",
+  "Implemented SMS and emailing service for the early version of the Web Application",
+];
+
+const expFR = [
+  "Assisted in the migration of legacy systems to a modern tech stack, ensuring zero downtime during deployment",
+  "Worked effectively within an Agile team, participating in sprint planning, code reviews, and daily stand-ups, contributing to a 15% increase in the team’s speed and timely project deliveries.",
+  "Designed and launched a responsive web application for a local startup, contributing to a 60% increase in site traffic and a 25% rise in customer retention",
+  "Develop RESTful APIs to integrate third-party services, improving API response times by 30% and reducing system downtime by 15%.",
+  "Optimize both front-end and back-end code, reducing page load times by 50% and enhancing database query performance by 35%. This will result in faster response times and an improved user experience.",
+  "Developed an automated testing framework for both front-end and back-end systems, increasing code coverage by 50% and reducing production bugs by 35%.",
+  "Implemented advanced security protocols, including data encryption and secure authentication systems, reducing security vulnerabilities by 50% and full compliance with industry security standards.",
+];
 
 export default function App() {
   return (
-    <Stack py={4}>
-      <Stack textAlign="center" alignItems="center" pb={2}>
-        <Typography
-          bgcolor="white"
-          width="70%"
-          fontSize="3rem"
-          border="2px solid blue"
-          mb={-4}
-          zIndex={2}
+    <Box py={4} px={10}>
+      <Typography
+        textAlign="center"
+        fontWeight={600}
+        letterSpacing={3}
+        fontSize="2rem"
+      >
+        <span style={{ fontWeight: 900, fontSize: "2.7rem" }}>I</span>FEOLUWA{" "}
+        <span style={{ fontWeight: 900, fontSize: "2.7rem" }}>A</span>
+        DEBOWALE
+      </Typography>
+
+      {/* contacts */}
+      <Stack direction="row" justifyContent="center" color="text.secondary">
+        <Stack direction="row" mr={2}>
+          <Email color="disabled" fontSize="small" sx={{ mr: 0.5 }} />
+          <Typography fontSize="0.9rem">adebowalejeﬀ@gmail.com</Typography>
+        </Stack>
+
+        <Stack direction="row" mr={2}>
+          <PermPhoneMsg color="disabled" fontSize="small" sx={{ mr: 0.5 }} />
+          <Typography fontSize="0.9rem">(+234) 8149236128</Typography>
+        </Stack>
+
+        <a
+          href="https://www.linkedin.com/in/ifeoluwa-adebowale-377779112/"
+          style={{ textDecoration: "none" }}
         >
-          IFEOLUWA ADEBOWALE
-        </Typography>
-        <Typography
-          bgcolor="rgba(170, 170, 170, 0.5)"
-          width="100%"
-          fontSize="2rem"
-          pt={4}
-          pb={1}
-        >
-          Web Engineer
-        </Typography>
-      </Stack>
-      <Stack direction="row">
-        <Box width="35%" borderRight="2px solid blue" px={4}>
-          <Typography
-            fontSize="1.5rem"
-            textAlign="right"
-            fontWeight={500}
-            pb={1}
-          >
-            CONTACT
-          </Typography>
-          <Box textAlign="right" color="text.secondary">
-            <Stack direction="row" justifyContent="flex-end" pb={1}>
-              <Typography>adebowalejeﬀ@yahoo.com</Typography>
-              <Email color="disabled" sx={{ ml: 2 }} />
-            </Stack>
-
-            <Stack direction="row" justifyContent="flex-end" pb={1}>
-              <Typography>(+234) 8149236128</Typography>
-              <PermPhoneMsg color="disabled" sx={{ ml: 2 }} />
-            </Stack>
-
-            <a
-              href="https://www.linkedin.com/in/ifeoluwa-adebowale-377779112/"
-              style={{ textDecoration: "none" }}
-            >
-              <Stack direction="row" justifyContent="flex-end" pb={1}>
-                <Typography color="blue">
-                  Ifeoluwa LinkedIn <br />
-                  (https://www.linkedin.com/in/ifeoluwa-adebowale-377779112/)
-                </Typography>
-                <LinkedIn color="disabled" sx={{ ml: 2 }} />
-              </Stack>
-            </a>
-
-            <a
-              href="https://github.com/Jeﬀsmeagol"
-              style={{ textDecoration: "inherit" }}
-            >
-              <Stack direction="row" justifyContent="flex-end" pb={1}>
-                <Typography color="blue">
-                  Ifeoluwa Github Account <br /> (https://github.com/Jeﬀsmeagol)
-                </Typography>
-                <GitHub color="disabled" sx={{ ml: 2 }} />
-              </Stack>
-            </a>
-
-            <a
-              href="https://adebowalejeﬀ.netlify.app/"
-              style={{ textDecoration: "inherit" }}
-            >
-              <Stack direction="row" justifyContent="flex-end" pb={1}>
-                <Typography color="blue">
-                  My Website <br /> (https://adebowalejeﬀ.netlify.app/)
-                </Typography>
-                <Language color="disabled" sx={{ ml: 2 }} />
-              </Stack>
-            </a>
-          </Box>
-
-          <Typography
-            fontSize="1.5rem"
-            textAlign="right"
-            fontWeight={500}
-            pt={6}
-            pb={1}
-          >
-            SKILLS
-          </Typography>
-          <Stack direction="row" justifyContent="space-between" pl={10}>
-            <Box textAlign="left" color="text.secondary">
-              <Typography>JavaScript</Typography>
-              <Typography>TypeScript</Typography>
-              <Typography>Nextjs</Typography>
-              <Typography>Reactjs</Typography>
-              <Typography>Redux-Toolkit</Typography>
-              <Typography>HTML/CSS</Typography>
-              <Typography>Material UI</Typography>
-              <Typography>Python</Typography>
-              <Typography>Webpack</Typography>
-            </Box>
-            <Box textAlign="right" color="text.secondary">
-              <Typography>Nodejs</Typography>
-              <Typography>Expressjs</Typography>
-              <Typography>MongoDB</Typography>
-              <Typography>Docker</Typography>
-              <Typography>Kubernetes</Typography>
-              <Typography>Jenkins</Typography>
-              <Typography>AWS services</Typography>
-              <Typography>Networking</Typography>
-              <Typography>RESTful APIs</Typography>
-            </Box>
-          </Stack>
-
-          <Typography
-            fontSize="1.5rem"
-            textAlign="right"
-            fontWeight={500}
-            pt={6}
-            pb={1}
-          >
-            OTHERS
-          </Typography>
-          <Box textAlign="right" color="text.secondary">
-            <Typography>Git/Github</Typography>
-            <Typography>CLI/Bash</Typography>
-            <Typography>Agile Methodologies</Typography>
-            <Typography>Testing(Unit & Integration)</Typography>
-            <Typography>Automation</Typography>
-            <Typography>Troubleshooting</Typography>
-            <Typography>Presentation</Typography>
-          </Box>
-
-          <Typography
-            fontSize="1.5rem"
-            textAlign="right"
-            fontWeight={500}
-            pt={6}
-            pb={1}
-          >
-            EDUCATION
-          </Typography>
-          <Box color="text.secondary" textAlign="right">
-            <Typography>
-              Mechanical Engineering <br /> Obafemi Awolowo University <br />{" "}
-              Osun, Nigeria
+          <Stack direction="row" color="text.secondary" mr={2}>
+            <LinkedIn color="disabled" fontSize="small" sx={{ mr: 0.5 }} />
+            <Typography fontSize="0.9rem">
+              linkedin.com/in/ifeoluwa-adebowale
             </Typography>
-          </Box>
+          </Stack>
+        </a>
+
+        <a
+          href="https://github.com/Jeﬀsmeagol"
+          style={{ textDecoration: "none" }}
+        >
+          <Stack direction="row" color="text.secondary" mr={2}>
+            <GitHub color="disabled" fontSize="small" sx={{ mr: 0.5 }} />
+            <Typography fontSize="0.9rem">github.com/Jeﬀsmeagol</Typography>
+          </Stack>
+        </a>
+
+        <a
+          href="https://adebowalejeﬀ.netlify.app/"
+          style={{ textDecoration: "none" }}
+        >
+          <Stack direction="row" color="text.secondary" mr={2}>
+            <Language color="disabled" fontSize="small" sx={{ mr: 0.5 }} />
+            <Typography fontSize="0.9rem">adebowalejeﬀ.com</Typography>
+          </Stack>
+        </a>
+      </Stack>
+
+      {/* experiences */}
+      <Box>
+        <Typography fontSize="1.4rem" fontWeight={600} borderBottom={2} pt={4}>
+          PROFESSIONAL EXPERIENCE
+        </Typography>
+
+        <Stack direction="row" justifyContent="space-between" pt={4}>
+          <Typography fontSize="1.2rem">
+            <span style={{ fontWeight: 900 }}>Freelancing</span>
+          </Typography>
+          <Typography fontSize="1.2rem">Apr 2024 - Jul 2024</Typography>
+        </Stack>
+        <Typography fontSize="1.2rem">Full-stack Developer</Typography>
+
+        <Box pt={1}>
+          {expFR.map((exp) => (
+            <Stack direction="row" pb={0.5}>
+              <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+              <Typography color="text.secondary">{exp}</Typography>
+            </Stack>
+          ))}
         </Box>
 
-        <Box width="60%" px={4}>
-          <Typography fontSize="1.5rem" fontWeight={500} pb={1}>
-            SUMMARY
+        <Stack direction="row" justifyContent="space-between" pt={4}>
+          <Typography fontSize="1.2rem">
+            <span style={{ fontWeight: 900 }}>TV Deluxe Global</span> - Lagos,
+            Nigeria
           </Typography>
-          <Typography>
-            I'm a Software Engineer that specializes in the Web, I have been
-            oppurtune to work in multiple areas of the web space from
-            development(coding), testing to deployment and automation in over 3
-            years. I have picked-up the use of many tools and abilities to learn
-            and collaborate in these rapidly changing environments and
-            compositions. Eager to apply my skills to tackle web
-            development/design/maintenance challenges to achieve more performant
-            and lasting impact on user experience.
-          </Typography>
+          <Typography fontSize="1.2rem">Apr 2024 - Jul 2024</Typography>
+        </Stack>
+        <Typography fontSize="1.2rem">Full-stack Engineer</Typography>
 
-          <Typography fontSize="1.5rem" fontWeight={500} pt={2} pb={1}>
-            WORK EXPERIENCE
-          </Typography>
-
-          <Typography fontSize="1.2rem" pb={1}>
-            Web Developer/SRE Engineer
-          </Typography>
-          <Typography>Interswitch Group</Typography>
-          <Typography py={2}>2023 - / Lagos, Nigeria</Typography>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Ensured the reliability and performance of ISW infrastructure and
-              related systems.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Developed and maintained monitoring, alerting systems and
-              participated in on-call rotations to address site reliability
-              issues leading the MTTR to reduce by about 10%.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Partnered with senior-level engineers to identify and resolve
-              complex performance issues resulting in 99.80% uptime compared to
-              the 99.50% recorded for the last FY for the kimono's services
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Participated in on-call rotations to address site reliability
-              issues.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Collaborated with designers and stakeholders to create a
-              user-friendly interface for a new web application, resulting in a
-              25% increase in user engagement and a 20% decrease in bounce rate.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Performed as the lead Front-end Engineer in a team of 12
-              consisting of fellow Front-end, Back-end, QA, DevOps and Product
-              manager in the development of a Travel agency/Social media
-              platform that provides users with the ability to find and link
-              with travel-partners in Java, Python and JavaScript.
-            </Typography>
-          </Stack>
-
-          <Typography fontSize="1.2rem" py={1}>
-            Web Developer
-          </Typography>
-          <Typography>FireSwitch Technologies Ltd</Typography>
-          <Typography py={2}>2021 - 2022 / Ibadan, Nigeria</Typography>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Translated UI/UX designs and wireframes into high-quality code
-              using tools like Reactjs Material UI with HTML and CSS.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Optimized web applications for maximum speed and scalability,
-              resulting in a 40% decrease in page load time and a 20% increase
-              in overall site traffic.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Developed and maintained RESTful APIs, enabling seamless
-              communication between web applications and third-party services,
-              resulting in a 30% increase in efficiency.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Debugged and troubleshooted web applications, identifying and
-              addressing performance bottlenecks, resulting in a 20% reduction
-              in bug-related delays and a 15% increase in overall code quality.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Attended stand-ups 2 times a month. Team members would review,
-              assign, and teach each other.
-            </Typography>
-          </Stack>
-          <Stack direction="row" pb={0.5}>
-            <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
-            <Typography color="text.secondary">
-              Built responsive, accessible, and highly-performant web pages to
-              enable all users to navigate site.
-            </Typography>
-          </Stack>
+        <Box pt={1}>
+          {expTV.map((exp) => (
+            <Stack direction="row" pb={0.5}>
+              <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+              <Typography color="text.secondary">{exp}</Typography>
+            </Stack>
+          ))}
         </Box>
-      </Stack>
-    </Stack>
+
+        <Stack direction="row" justifyContent="space-between" pt={4}>
+          <Typography fontSize="1.2rem">
+            <span style={{ fontWeight: 900 }}>Interswitch Group</span> - Lagos,
+            Nigeria
+          </Typography>
+          <Typography fontSize="1.2rem">Mar 2023 - Jan 2024</Typography>
+        </Stack>
+        <Typography fontSize="1.2rem">DevOps / SRE Engineer</Typography>
+
+        <Box pt={1}>
+          {expIS.map((exp) => (
+            <Stack direction="row" pb={0.5}>
+              <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+              <Typography color="text.secondary">{exp}</Typography>
+            </Stack>
+          ))}
+        </Box>
+
+        <Stack direction="row" justifyContent="space-between" pt={4}>
+          <Typography fontSize="1.2rem">
+            <span style={{ fontWeight: 900 }}>FireSwitch Technologies Ltd</span>{" "}
+            - Ibadan, Nigeria
+          </Typography>
+          <Typography fontSize="1.2rem">Jan 2021 - Nov 2022</Typography>
+        </Stack>
+        <Typography fontSize="1.2rem">Front-end Engineer</Typography>
+
+        <Box pt={1}>
+          {expFS.map((exp) => (
+            <Stack direction="row" pb={0.5}>
+              <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+              <Typography color="text.secondary">{exp}</Typography>
+            </Stack>
+          ))}
+        </Box>
+      </Box>
+
+      {/* skills */}
+      <Box>
+        <Typography fontSize="1.4rem" fontWeight={600} borderBottom={2} pt={4}>
+          SKILLS
+        </Typography>
+        <Stack direction="row" minWidth="100%" pt={4} sx={{ flexWrap: "wrap" }}>
+          {skills.map((skill) => (
+            <Stack direction="row" py={0.5} mr={2}>
+              <RadioButtonChecked sx={{ fontSize: 15, mt: 0.6, mx: 2 }} />
+              <Typography color="text.secondary">{skill}</Typography>
+            </Stack>
+          ))}
+        </Stack>
+      </Box>
+
+      {/* education */}
+      <Box>
+        <Typography fontSize="1.4rem" fontWeight={600} borderBottom={2} pt={4}>
+          EDUCATION
+        </Typography>
+        <Stack direction="row" justifyContent="space-between" pt={4}>
+          <Typography fontSize="1.2rem">
+            <span style={{ fontWeight: 900 }}>Obafemi Awolowo University</span>{" "}
+            - Osun, Nigeria
+          </Typography>
+          <Typography fontSize="1.2rem">2012 - 2019</Typography>
+        </Stack>
+        <Typography>BSc. Mechanical Engineering </Typography>
+      </Box>
+    </Box>
   );
 }
