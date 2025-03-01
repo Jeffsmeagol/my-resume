@@ -33,6 +33,7 @@ const skills = [
   "Kubernetes",
   "Git",
   "Bash",
+  "Python"
 ];
 
 const expFS = [
@@ -63,9 +64,9 @@ const expTV = [
 const expFR = [
   "Assisted in the migration of legacy systems to a modern tech stack, ensuring zero downtime during deployment",
   "Worked effectively within an Agile team, participating in sprint planning, code reviews, and daily stand-ups, contributing to a 15% increase in the team’s speed and timely project deliveries.",
-  "Designed and launched a responsive web application for a local startup, contributing to a 60% increase in site traffic and a 25% rise in customer retention",
-  "Develop RESTful APIs to integrate third-party services, improving API response times by 30% and reducing system downtime by 15%.",
-  "Optimize both front-end and back-end code, reducing page load times by 50% and enhancing database query performance by 35%. This will result in faster response times and an improved user experience.",
+  "Developed and launched a responsive web application for a local startup, contributing to a 60% increase in site traffic and a 25% rise in customer retention",
+  "Developed RESTful APIs to integrate third-party services, improving API response times by 30% and reducing system downtime by 15%.",
+  "Optimized both front-end and back-end code, reducing page load times by 50% and enhancing database query performance by 35%. This will result in faster response times and an improved user experience.",
   "Developed an automated testing framework for both front-end and back-end systems, increasing code coverage by 50% and reducing production bugs by 35%.",
   "Implemented advanced security protocols, including data encryption and secure authentication systems, reducing security vulnerabilities by 50% and full compliance with industry security standards.",
 ];
@@ -139,7 +140,7 @@ export default function App() {
           <Typography fontSize="1.2rem">
             <span style={{ fontWeight: 900 }}>Freelancing</span>
           </Typography>
-          <Typography fontSize="1.2rem">Apr 2024 - Jul 2024</Typography>
+          <Typography fontSize="1.2rem">Apr 2024 - </Typography>
         </Stack>
         <Typography fontSize="1.2rem">Full-stack Developer</Typography>
 
