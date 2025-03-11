@@ -78,11 +78,10 @@ export default function App() {
         textAlign="center"
         fontWeight={600}
         letterSpacing={3}
-        fontSize="2rem"
+        fontSize="2.5rem"
       >
-        <span style={{ fontWeight: 900, fontSize: "2.7rem" }}>I</span>FEOLUWA{" "}
-        <span style={{ fontWeight: 900, fontSize: "2.7rem" }}>A</span>
-        DEBOWALE
+        IFEOLUWA
+        ADEBOWALE
       </Typography>
 
       {/* contacts */}
