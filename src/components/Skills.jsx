@@ -3,9 +3,13 @@ import { Box, Stack, Typography } from "@mui/material";
 const frontendSkills = [
   "JavaScript (ES6+)",
   "TypeScript",
+  "Tanstack",
   "React.js",
   "Next.js",
   "React Native",
+  "Kotlin",
+  "SwiftUI",
+  "Jetpack Compose",
   "HTML5/CSS3",
   "TailwindCSS",
   "Material UI",
@@ -28,12 +32,15 @@ const backendSkills = [
   "MySQL",
   "MongoDB",
   "Redis",
+  "Kafka",
+  "Better-auth",
   "Prisma ORM",
-  "TypeORM",
   "Database Design",
+  "Backfills & Migrations",
 ];
 
 const cloudSkills = [
+  "Cloudflare",
   "AWS Services",
   "Azure",
   "Google Cloud Platform",
@@ -45,6 +52,8 @@ const cloudSkills = [
 
 const aiToolsSkills = [
   "AI Integration",
+  "LangChain",
+  "LangSmith",
   "OpenAI API",
   "API Development",
   "Git/GitHub",

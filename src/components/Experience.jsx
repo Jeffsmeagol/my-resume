@@ -2,13 +2,26 @@ import { Box, Typography } from "@mui/material";
 import ExperienceItem from "./ExperienceItem";
 
 const experienceData = [
+    {
+    title: "Senior Software Engineer",
+    period: "December 2025 - Present",
+    company: "Idealab Software Services Limited",
+    location: "Lagos, Nigeria",
+    experiences: [
+      "Developed and maintained a multi-tenant insurance management platform using React, TypeScript, and TanStack, delivering full-stack features spanning UI development, middleware, business logic, validation, database schema migrations, and data backfills.",
+      "Led the modernization of a legacy analytics dashboard, implementing real-time WebSocket updates and data segmentation to enhance monitoring, reporting, and operational decision-making.",
+      "Architected and implemented a multi-branch tenant model, enabling organizations to manage multiple operational branches while preserving tenant isolation and business workflows.",
+      "Built an internal operations application for tenant administration, customer support, and issue investigation, streamlining management of broker organizations and user accounts.",
+      "Worked cross-functionally with product, engineering, and support teams to deliver management-prioritized features while providing technical guidance and task decomposition for junior engineers and interns.",
+    ],
+  },
   {
     title: "Freelance Full-Stack Developer",
-    period: "April 2024 - Present",
+    period: "April 2024 - December 2025",
     company: "Independent Contractor",
     location: "Remote",
     experiences: [
-      "Developed full-stack web applications using React.js, Next.js, TypeScript, and NestJS, implementing responsive designs with Material UI and TailwindCSS",
+      "Developed full-stack web applications using Tanstack, React.js, Next.js, TypeScript, and NestJS, implementing responsive designs with Shadcn UI and TailwindCSS",
       "Migrated legacy systems to modern tech stack (React.js, Node.js, TypeScript) ensuring zero downtime and improved performance by 50%",
       "Built and deployed responsive web applications for startups using React.js and Node.js, contributing to 60% increase in site traffic and 25% rise in customer retention",
       "Designed and implemented RESTful APIs using Express.js and NestJS, improving API response times by 30% and reducing system downtime by 15%",
@@ -18,22 +31,8 @@ const experienceData = [
     ],
   },
   {
-    title: "Full-Stack Engineer",
-    period: "April 2024 - July 2024",
-    company: "TV Deluxe Global",
-    location: "Lagos, Nigeria",
-    experiences: [
-      "Led full-stack development initiatives using React.js, Next.js, and NestJS, contributing to the entire software development lifecycle from requirements analysis to deployment",
-      "Architected and implemented multi-country payment service integration using TypeScript and RESTful APIs, supporting multiple third-party payment providers",
-      "Designed and developed product delivery services for global inventory management using Node.js, Express.js, and MongoDB",
-      "Implemented comprehensive CI/CD pipelines for client, admin, and backend applications using Docker and Kubernetes",
-      "Built SMS and email notification services using Node.js and third-party APIs, enhancing user communication capabilities",
-      "Collaborated with product and design teams to conceptualize and implement scalable system architecture",
-    ],
-  },
-  {
     title: "DevOps / SRE Engineer",
-    period: "March 2023 - January 2024",
+    period: "March 2023 - April 2024",
     company: "Interswitch Group",
     location: "Lagos, Nigeria",
     experiences: [
@@ -41,7 +40,6 @@ const experienceData = [
       "Developed automated monitoring and alerting systems using Python and Bash scripting, reducing Mean Time To Recovery (MTTR) by 10%",
       "Collaborated with senior engineers to identify and resolve complex performance bottlenecks, implementing solutions that improved system reliability",
       "Participated in 24/7 on-call rotations, providing rapid response to site reliability issues and maintaining service level agreements",
-      "Designed and implemented user-friendly web interfaces using React.js and Material UI, resulting in 25% increase in user engagement and 20% decrease in bounce rate",
     ],
   },
   {

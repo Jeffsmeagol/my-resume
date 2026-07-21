@@ -56,7 +56,7 @@ export default function Header() {
           <Stack direction="row" alignItems="center">
             <LinkedIn color="disabled" fontSize="small" sx={{ mr: 0.5 }} />
             <Typography fontSize="0.9rem">
-              linkedin.com/in/ifeoluwa-adebowale
+              linkedin.com/in/ifeoluwa-adebowale/377779112
             </Typography>
           </Stack>
         </a>
